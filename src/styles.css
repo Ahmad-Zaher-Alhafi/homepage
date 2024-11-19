@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -10,15 +13,28 @@ body {
   min-height: 100vh;
 
   --content-padding: 0 200px;
+  --shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .headerBackground {
-  background-color: #0891b3;
   width: 100%;
-  min-height: 77%;
+  min-height: 100%;
 
   position: absolute;
   z-index: -1;
+
+  filter: drop-shadow(var(--shadow));
+}
+
+.header {
+  width: 100%;
+  min-height: 60%;
+
+  position: absolute;
+  z-index: -1;
+  background-color: #0891b3;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
 }
 
 /* About me section */
@@ -31,6 +47,7 @@ body {
   align-items: center;
 
   flex: 1;
+  filter: drop-shadow(var(--shadow));
 }
 
 .pitcureSection {
@@ -45,7 +62,7 @@ body {
 
 .name {
   position: absolute;
-  bottom: 0%;
+  bottom: 2%;
   left: 0%;
 
   color: white;
@@ -53,11 +70,14 @@ body {
 
   min-width: 100%;
   text-align: center;
+
+  font-family: "Playfair Display", sans-serif;
+  text-shadow: 2px 3px 2px black;
 }
 
 .aboutMeContent {
   background-color: white;
-  height: 600px;
+  height: 650px;
 
   padding: 40px 40px 40px 20px;
 
@@ -68,12 +88,17 @@ body {
 }
 
 .aboutMeTitle {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
+
+  font-family: "Playfair Display", sans-serif;
 }
 
 .aboutMeDesc {
   font-size: 30px;
+  color: #4e4e4e;
+
+  font-family: "Roboto", sans-serif;
 }
 
 .socialMediaIcons {
@@ -101,6 +126,7 @@ body {
 .workSectionTitle {
   font-size: xx-large;
   font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .myWorkContent {
@@ -128,7 +154,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow);
 }
 
 .projectScreenshot {
@@ -148,6 +174,7 @@ body {
 .projectName {
   font-size: large;
   font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .projectLinks {
@@ -166,6 +193,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: "Robot", sans-serif;
 }
 
 /* Contact me section */
@@ -192,6 +220,7 @@ body {
   color: white;
 
   font-size: x-large;
+  font-family: "Robot", sans-serif;
 }
 
 .officePicture {
@@ -205,6 +234,7 @@ body {
 .contactMeTitle {
   font-size: xx-large;
   font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .contactSocialMediaIcons {
