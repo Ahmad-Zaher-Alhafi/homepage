@@ -1,23 +1,21 @@
 body {
-  background-color: gray;
   padding: 0;
   margin: 0;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 50px;
 
   min-height: 100vh;
+
+  --content-padding: 0 200px;
 }
 
 .headerBackground {
   background-color: #0891b3;
-  width: 5000px;
+  width: 100%;
   min-height: 100%;
-
-  transform: rotate(-15deg) translate(-15%, -4%);
-  transform-origin: top left;
 
   position: absolute;
   z-index: -1;
@@ -26,7 +24,7 @@ body {
 /* About me section */
 
 .aboutMeSection {
-  padding: 0 200px;
+  padding: var(--content-padding);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +87,7 @@ body {
 /* My work section */
 
 .myWorkSection {
-  padding: 0 200px;
+  padding: var(--content-padding);
 
   display: flex;
   flex-direction: column;
@@ -128,7 +126,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .projectScreenshot {
@@ -170,5 +168,45 @@ body {
 
 /* Contact me section */
 .contactMeSection {
+  box-sizing: border-box;
+  padding: var(--content-padding);
+
+  background-color: #0891b3;
   flex: 1;
+  min-width: 100%;
+}
+
+.contactMeContent {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contactInfoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+
+  font-size: x-large;
+}
+
+.officePicture{
+    width: 500px;
+}
+
+.personalOfficeImg{
+    width: 100%;
+}
+
+.contactMeTitle{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.contactSocialMediaIcons{
+    font-size: x-large;
+    display: flex;
+    gap: 10px;
 }
