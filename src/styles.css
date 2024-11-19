@@ -13,7 +13,7 @@ body {
 
 .headerBackground {
   background-color: #0891b3;
-  width: 3000px;
+  width: 5000px;
   min-height: 100%;
 
   transform: rotate(-15deg) translate(-15%, -4%);
@@ -86,10 +86,89 @@ body {
   gap: 20px;
 }
 
+/* My work section */
+
 .myWorkSection {
+  padding: 0 200px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   flex: 1;
 }
 
+.workSectionTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.myWorkContent {
+  --minProjectWidth: 315px;
+
+  display: grid;
+  grid-template:
+    repeat(
+      auto-fit,
+      minmax(var(--minProjectWidth), calc(var(--minProjectWidth) * 2))
+    )
+    / repeat(
+      auto-fit,
+      minmax(var(--minProjectWidth), calc(var(--minProjectWidth) * 2))
+    );
+
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.project {
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.projectScreenshot {
+  max-height: 250px;
+  width: 100%;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectName {
+  font-size: large;
+  font-weight: bold;
+}
+
+.projectLinks {
+  font-size: large;
+  display: flex;
+  gap: 10px;
+}
+
+.projectInfo {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contact me section */
 .contactMeSection {
   flex: 1;
 }
