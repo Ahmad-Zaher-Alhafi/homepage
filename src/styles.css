@@ -1,3 +1,95 @@
-body{
-    background-color: gray;
+body {
+  background-color: gray;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  min-height: 100vh;
+}
+
+.headerBackground {
+  background-color: #0891b3;
+  width: 3000px;
+  min-height: 100%;
+
+  transform: rotate(-15deg) translate(-15%, -4%);
+  transform-origin: top left;
+
+  position: absolute;
+  z-index: -1;
+}
+
+/* About me section */
+
+.aboutMeSection {
+  padding: 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+  min-height: 100vh;
+}
+
+.pitcureSection {
+  position: relative;
+  min-width: 50%;
+}
+
+.personalPicture {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+
+  color: white;
+  font-size: 80px;
+
+  min-width: 100%;
+  text-align: center;
+}
+
+.aboutMeContent {
+  background-color: white;
+  height: 800px;
+
+  padding: 40px 40px 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.aboutMeTitle {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.aboutMeDesc {
+  font-size: 30px;
+}
+
+.socialMediaIcons {
+  align-self: flex-end;
+  font-size: 30px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.myWorkSection {
+  flex: 1;
+}
+
+.contactMeSection {
+  flex: 1;
 }
